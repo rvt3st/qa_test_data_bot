@@ -8,7 +8,7 @@ from telebot import TeleBot, types
 from html import escape
 
 # НАСТРОЙКИ
-TOKEN = 'TOKEN'
+TOKEN = os.getenv("TOKEN")
 bot = TeleBot(TOKEN, parse_mode='html')
 
 faker_default = Faker()
